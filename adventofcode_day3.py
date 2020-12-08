@@ -19,26 +19,29 @@ class tree_counter_tob:
                 tree_num = tree_num + 1
 
             skip = skip + self.run
+            
         return tree_num
 
+
 # loop through class
-
-
 def class_loop(slope_input):
     result = []
+    
     for i in range(len(slope_input)):
         answer = tree_counter_tob(
             slope_input[i][0], slope_input[i][1], 'input3')
         result.append(answer.tree_count())
+        
     return result
 
+
 # multiply results
-
-
 def mult_array(array):
     r = 1
+    
     for x in array:
         r = r * x
+        
     print('Multiplication: ' + str(r))
 
 
