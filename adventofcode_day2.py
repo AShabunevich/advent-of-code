@@ -28,9 +28,11 @@ for i in range(len(letters)):
     count_arr = int(count_array[i])
     min_num = int(min_nums[i])
     max_num = int(max_nums[i])
+    
     # first condition (part 1)
     if count_arr >= min_num and count_arr <= max_num:
         num += 1
+        
     # second condition (part 2)
     if strings[i][min_num-1] == letters[i] or strings[i][max_num-1] == letters[i]:
         if strings[i][min_num-1] != strings[i][max_num-1]:
